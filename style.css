@@ -1,0 +1,48 @@
+div {
+    width: calc(100% - 50px); /* Subtracts 50px from the container width */
+    height: calc(50vh + 20px); /* 50% of viewport height + 20px */
+  }
+  :root {
+    --primary-color: #3498db;
+    --spacing: 10px;
+  }
+
+  p {
+    color: var(--primary-color); /* Uses the primary color */
+    margin: var(--spacing); /* Uses the spacing value */
+    font-size: clamp(12px, 2vw, 24px); /*Scales text dynamically*/
+  }
+
+  .f1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bounce-box {
+    width: 200px;
+    height: 200px;
+    background-color: #3498db;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    text-align: center;
+    /* ignore above */
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55); /* Bounce effect */
+  }
+
+  .bounce-box:hover {
+    transform: scale(1.2); /* On hover, scale the box */
+  }
+
+.pt{
+  filter: blur(15px); /* Blurs the image */
+  transition: filter 0.3s ease-in-out; /* Smooth transition */
+}
+
+.pt:hover {
+    filter: blur(0); /* Removes the blur on hover */
+  }
+  
